@@ -1,0 +1,123 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón dark */
+.boton-dark {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.boton-producto {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boton-servicio {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none !important;
+    display: none !important;
+    position: absolute !important;
+    top: 5vh !important;
+    right: 5px !important;
+    background-color: #262626ac !important;
+    padding: 10px !important;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.menu.active {
+    display: block !important;
+}
+
+.boton-menu {
+    cursor: pointer !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: none !important;
+    display: inline-block !important;
+    margin-right: 30px !important;
+    margin-top: 10px !important;
+}
+nav {
+    background-color: #222222;
+    text-align: right;
+    height: 7vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+    list-style: none !important;
+}
+
+.inicio {
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+
+/* Estilos para la imagen */
+.seccion-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el texto centrado */
+.texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .boton-dark {
+    color: #fff;
+}
+
+body.dark-mode .titulo-productos,
+body.dark-mode .titulo-servicios {
+    color: #ffffff;
+}
+
+/* Estilos para la sección */
+.seccion-imagen {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}

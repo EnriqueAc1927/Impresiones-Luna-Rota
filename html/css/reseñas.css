@@ -1,0 +1,44 @@
+img{
+    width: 50%;
+}
+
+.txt{
+    color: black;
+    text-align: justify;
+}
+
+.margin-right-adjust{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.review-container {
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.377);
+    height: auto;
+    padding: 10px;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+@media (max-width: 576px) {
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .boton-dark {
+    color: #fff;
+}
+
+body.dark-mode .txt{
+    color: #ffffff;
+}

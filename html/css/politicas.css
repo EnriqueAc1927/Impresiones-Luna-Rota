@@ -1,0 +1,39 @@
+
+.txt{
+    color: black;
+    text-align: justify;
+}
+
+.txtp{
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .boton-dark {
+    color: #fff;
+}
+
+body.dark-mode .titlep,
+body.dark-mode .txt {
+    color: #ffffff;
+}
+
+.seccion-imagen .texto-centrado {
+    font-size: 36px; /* Tamaño de letra por defecto */
+}
+
+@media (max-width: 768px) {
+    .seccion-imagen .texto-centrado {
+        font-size: 30px; /* Tamaño de letra para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-imagen .texto-centrado {
+        font-size: 30px; /* Tamaño de letra para pantallas muy pequeñas */
+    }
+}

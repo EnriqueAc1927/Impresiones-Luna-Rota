@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al cambiar los colores */
+}
+
+nav {
+    background-color: #222222;
+    text-align: right;
+    height: 5vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+.menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 5vh;
+    right: 5px;
+    background-color: #262626ac;
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Redondear los bordes inferiores */
+}
+
+.menu.active {
+    display: block;
+}
+
+.boton-menu, .boton-dark {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+}
+
+.inicio {
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    height: 200px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contactos, .footer-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+#contacto {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    right: 10px;
+    position: absolute;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.seccion-imagen {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.seccion-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos para la sección "apartado tres" */
+.apartado {
+    text-align: center;
+    padding: 70px;
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.box {
+    position: relative;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+h3 a {
+    text-decoration: none; /* Quitar subrayado del texto */
+    color: inherit; /* Usar el mismo color del h3 */
+}
+
+/* Clase personalizada para ajustar el tamaño de las imágenes */
+.custom-img-size {
+    width: 100%; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilos para el título "Luna Rota" */
+.titulo-luna-rota {
+    color: white;
+    font-size: 80px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .img-container {
+        display: block;
+    }
+    .titulo-productos {
+        font-size: 35px;
+    }
+    .titulo-luna-rota {
+        font-size: 40px; /* Ajusta este valor según sea necesario */
+    }
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .titulo-productos {
+        font-size: 30px;
+    }
+}
+

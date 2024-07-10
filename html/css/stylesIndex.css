@@ -1,0 +1,341 @@
+* {
+    margin: auto 0;
+    padding: 0;
+}
+
+#texto{
+    text-decoration: none;
+    color: black;
+}
+
+.contacto {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contactos {
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+#contacto {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    right: 10px;
+    position: absolute;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prendas {
+    margin-left: 2%;
+}
+
+duo {
+    display: flex;
+}
+
+duo img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    width: calc(33.333% - 20px);
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    height: 200px;
+    background-color: #222;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .prendas {
+        margin-left: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    article img {
+        width: 100%;
+        height: auto;
+    }
+    .titulo-productos {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-productos {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .uno {
+        background-image: url("../img/slideshow-9.jpg");
+        background-size: cover;
+        align-items: center;
+        background-position: 50% 20%;
+        height: 100vh;
+        width: 100%;
+    }
+    #parte1 {
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 90px;
+        color: #fff;
+        text-align: center;
+    }
+    .cinco {
+        display: none;
+    }
+    .tres .cuatro .dos {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .uno {
+        background-image: url("../img/slideshow-9.jpg");
+        background-color: rgb(183, 29, 29);
+        background-size: 600px auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+    .uno, .tres, .cuatro, .dos {
+        height: auto;
+    }
+    #parte1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 90px;
+        color: #801393;
+        text-align: center;
+    }
+    .img-container {
+        display: inline;
+    }
+    .cinco {
+        display: none;
+    }
+    .box {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box:nth-child(odd) {
+        display: block;
+    }
+    figure {
+        width: 100%;
+        margin: 20px 0;
+    }
+    figure>figcaption>span {
+        display: block;
+    }
+    footer {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+@font-face {
+    font-family: "Bubbler";
+    src: url("../font/BubblerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Chilanka";
+    src: url("../font/Chilanka-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Redes";
+    src: url("../font/Grunge-Social-Media.ttf");
+}
+
+.apartado{
+    text-align: center;
+    padding: 70px;
+}
+
+h4 {
+  font-family: 'Zen Loop', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+        
+h3 {
+  font-family: Bubbler, cursive;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.img-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-container h3{
+  margin: 0 20px;
+}
+
+.box{
+  position: relative;
+  width: 25%;
+}
+
+.box img{
+  width:60%;
+}
+
+.precio {
+  font-family: Bubbler, cursive;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+p{
+  text-align: center;
+}
+
+nav {
+    background-color: #222222 !important;
+    text-align: right !important;
+    height: 7vh !important;
+    width: 100% !important;
+    top: 0 !important;
+    position: sticky !important;
+    z-index: 100 !important;
+}
+
+.menu {
+    list-style: none !important;
+    display: none !important;
+    position: absolute !important;
+    top: 5vh !important;
+    right: 5px !important;
+    background-color: #262626ac !important;
+    padding: 10px !important;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.menu.active {
+    display: block !important;
+}
+
+.boton-menu {
+    cursor: pointer !important;
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: none !important;
+    display: inline-block !important;
+    margin-right: 30px !important;
+    margin-top: 10px !important;
+}
+
+nav a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+    list-style: none !important;
+}
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+
+    .tres{
+        height: auto;
+    }
+    
+    }
+    
+    
+    
+    /*Movil*/
+    @media screen  and (max-width:767px) {
+    
+    .tres{
+        height: auto;
+    }
+    
+    .img-container{
+        display: inline;
+    }
+    
+    .box{
+        position: relative;
+        width: 100%;
+        margin-bottom:10px ;
+    }
+    
+    .box:nth-child(odd){
+        display:none;
+    }
+    
+    }
